@@ -1,46 +1,23 @@
 <!DOCTYPE html>
-    <head>
-        <title>Good Morning</title>
-        <style>
-            body {
-                background-color: red;
-                margin: 50px;
-            }
-            
-            h1 {
-                font-style: italic, bold; color: blue; text-align: center;
-            }
-
-            #container {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            table {
-                align-items: center;
-            }
-
-            td {
-                text-align: center;
-            }
-        </style>
-    </head>
-
-    <body>
-        <h1>Good morning Lucas and Dylan!</h1>
-        <table style="align-items: center;">
-            <thead>
-                <tr>
-                    <th> Daddy loves you Lucas!</th>
-                    <th> Daddy loves you very much Dylan!</th>    
-                <tbody>
-                    <tr>
-                        <td style="border:1px black"><img src="images/Lucas.jpg" alt="Lucas" width="300"></td>
-                        <td><img src="images/Dylan.jpg" alt="Dylan" width="600" height="auto"></td>
-                    </tr>
-                    </tr>
-                        <td>Lucas has awesome hair today!</td>
-                        <td>Dylan has a field trip today!</td>
-                </tbody>    
-            </table>
-        </body>                        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side by Side Images with Text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Daddy loves you very much Dylan!</h2>
+            <img src="images/Dylan.jpg" alt="Dylan">
+            <p>Dylan has a field trip today!</p>
+        </div>
+        <div class="grid-item">
+            <h2>Daddy loves you Lucas!</h2>
+            <img src="images/Lucas.jpg" alt="Lucas">
+            <p>Lucas has awesome hair today!</p>
+        </div>
+    </div>
+</body>
+</html>
